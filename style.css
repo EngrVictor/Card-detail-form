@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    Font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .error {
+    border: 1px solid hsl(0, 100%, 66%);
+  }
+
+  .side {
+    width: 30%;
+    height: 100vh;
+    background-image: url(./images/bg-main-desktop.png)
+  }
+
+  .side img {
+    width: 100%;
+  }
+
+  .front {
+    margin: 30% 0 0 30%;
+  }
+
+  .back {
+    margin: 10% 0 0 50%;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  input:focus {
+    outline: none;
+    border: 1px solid;
+    border-image: linear-gradient(hsl(249, 83%, 68%) to hsl(278, 41%, 39%));
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  label {
+    font-size: small;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: hsl(279, 6%, 55%)
+  }
+
+  /* input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  } */
+
+  .date input {
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  .num {
+    display: flex;
+  }
+
+  .main {
+    margin: auto;
+    margin-left: 350px;
+  }
+
+  .front-icon, .back-cont{
+    position: relative;
+  }
+
+  .card-icon {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    width: 70px !important;
+    /* background-color: blue; */
+  } 
+
+  form {
+    width: 70%;
+    /* margin-left: 50px; */
+  }
+
+  form div {
+    margin-bottom: 20px;
+  }
+
+  .detail {
+    width: 80%;
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 150px;
+    top: 230px;
+  }
+
+  .detail > p {
+    margin-bottom: 15px;
+    word-spacing: 8px;
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  .detail-sub {
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+  }
+
+  .detail-sub p {
+    font-size: 13px;
+    color: hsl(0, 5%, 88%);
+  }
+
+  .back-cont p {
+    font-size: 13px;
+    color: hsl(0, 5%, 88%);
+    position: absolute;
+    left: 500px;
+    bottom: 105px;
+  }
