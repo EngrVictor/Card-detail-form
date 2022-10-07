@@ -44,11 +44,15 @@
   input:focus {
     outline: none;
     border: 1px solid;
-    border-image: linear-gradient(hsl(249, 83%, 68%) to hsl(278, 41%, 39%));
+    border-color: #b55bd5;
   }
 
-  input[type="text"] {
+  input[type="text"], #num {
     width: 100%;
+  }
+
+  #num {
+    font-size: 15px;
   }
 
   label {
@@ -67,10 +71,10 @@
     background-color: hsl(279, 6%, 55%)
   }
 
-  /* input::-webkit-outer-spin-button,
+  input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-  } */
+  }
 
   .date input {
     width: 30%;
@@ -95,7 +99,6 @@
     top: 140px;
     left: 150px;
     width: 70px !important;
-    /* background-color: blue; */
   } 
 
   form {
@@ -108,7 +111,7 @@
   }
 
   .detail {
-    width: 80%;
+    width: 30%;
     color: hsl(0, 0%, 100%);
     position: absolute;
     left: 150px;
